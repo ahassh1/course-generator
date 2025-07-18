@@ -14,7 +14,7 @@ export default function Index() {
     style={{
       width: '100%',
       height:300,
-      marginTop:50
+      marginTop:20
     }}
     />
 
@@ -26,8 +26,8 @@ export default function Index() {
       borderTopRightRadius:30
     }
     }>
-      <Text style={{textAlign:"center", color:Colors.WHITE, fontSize:29, fontWeight:'bold'}}>Welcome to Daily Campus</Text>
-      <Text style={{fontSize:18, color:Colors.WHITE, textAlign:"center", marginTop:18}}>
+      <Text style={{textAlign:"center", color:Colors.WHITE, fontSize:29, fontWeight:'bold', fontFamily:'outfit-bold'}}>Welcome to Daily Campus</Text>
+      <Text style={{fontSize:18,fontFamily:'outfit-bold', color:Colors.WHITE, textAlign:"center", marginTop:18}}>
         Transform your ideas into engaging education and content effortlessly with all in one
       </Text>
       
@@ -54,6 +54,7 @@ const styles = StyleSheet.create({
   buttonText:{
       textAlign:'center',
       fontSize:14,
+      fontFamily:'outfit-bold'
 
   }
   
