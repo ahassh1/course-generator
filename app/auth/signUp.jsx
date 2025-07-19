@@ -18,7 +18,6 @@ export default function SignUp() {
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
-        // paddingTop: 50,
         padding: 25,
         flex: 1,
         backgroundColor: Colors.WHITE,
@@ -27,8 +26,8 @@ export default function SignUp() {
       <Image
         source={require("./../../assets/images/ahasshLogo.png")}
         style={{
-          width: 100,
-          height: 100,
+          width: 130,
+          height: 140,
         }}
       />
       <Text
