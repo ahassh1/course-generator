@@ -1,3 +1,4 @@
+import { useRouter } from "expo-router";
 import {
   Image,
   Pressable,
@@ -10,6 +11,7 @@ import {
 import Colors from "./../../constant/Colors";
 
 export default function SignUp() {
+  const router = useRouter();
   return (
     <View
       style={{
@@ -78,7 +80,7 @@ export default function SignUp() {
         <Text style={{ fontFamily: "outfit-bold", color: Colors.GRAY }}>
           Already have an account please,
         </Text>
-        <Pressable>
+        <Pressable onPress={() => router.push("/auth/signIn")}>
           <Text
             style={{
               fontFamily: "outfit-bold",
