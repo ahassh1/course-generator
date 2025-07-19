@@ -27,8 +27,8 @@ export default function SignIn() {
       <Image
         source={require("./../../assets/images/ahasshLogo.png")}
         style={{
-          width: 100,
-          height: 100,
+          width: 110,
+          height: 110,
         }}
       />
       <Text

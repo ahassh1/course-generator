@@ -1,4 +1,5 @@
 import { useRouter } from "expo-router";
+import { useState } from "react";
 import {
   Image,
   Pressable,
@@ -12,6 +13,9 @@ import Colors from "./../../constant/Colors";
 
 export default function SignUp() {
   const router = useRouter();
+  const [fullName, setFullName] = useState();
+  const [email, setEmail] = useState();
+  const [password, setPassword] = useState();
   return (
     <View
       style={{
@@ -38,10 +42,21 @@ export default function SignUp() {
       >
         Create new account
       </Text>
-      <TextInput placeholder="Full Name" style={styles.textInput} />
-      <TextInput placeholder="Email" style={styles.textInput} />
+      <TextInput
+        placeholder="Full Name"
+        onChangeText={(value) => setFullName(value)}
+        style={styles.textInput}
+      />
+
+      <TextInput
+        placeholder="Email"
+        onChangeText={(value) => setEmail(value)}
+        style={styles.textInput}
+      />
+
       <TextInput
         placeholder="password"
+        onChangeText={(value) => setPassword(value)}
         secureTextEntry="true"
         style={styles.textInput}
       />
